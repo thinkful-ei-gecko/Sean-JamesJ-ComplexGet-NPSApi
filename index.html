@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>NPS Park Finder</title>
+    <link rel="stylesheet" href="styles/index.css">
+</head>
+<body>
+    <header>
+        <h1>National Parks Service Park Locator</h1>
+    </header>
+    <div class ="container">
+            <form id = "jsForm">
+                <label for="statesPrompt">Please enter valid 2-digit state code(s) for the parks you wish to search for.
+                    Seperate state codes with a space for multiple states.</label>
+                <input type="text" name = "statesPrompt" id = "statesLabel" required></br>
+                <label for="maxStates">Please enter the maximum number of states you wish to search for (not required)</label>
+                <input type="number" name = "maxStates" id = "maxNumLabel" value=10> 
+                <input type = "submit" value ="Find Parks!">
+            </form>
+            <div class ="parkDisplay">
+                <span class ="insertStringHere"></span>
+            </div>
+    </div>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="scripts/script.js"></script>
+</body>
+</html>
